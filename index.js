@@ -1,9 +1,3 @@
-// initialize board
-// set knights position in board
-// have knight do all possible moves until it reaches end location
-// add each move to visited variable
-// get length of visited variable, if less than best, replace best
-// return visited array
 function Node(position, path) {
   // sets board bounds
   if (
