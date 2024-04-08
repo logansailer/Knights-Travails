@@ -37,8 +37,11 @@ function knightMoves(start, end) {
         recentMove.push(node);
       }
     });
+    // sets current to new location and reruns test
     current = recentMove.shift();
   }
+
+  // ^^ ends when the first possibility returns true. Uses huge amounts of memory I think
   console.log(
     `You made it in ${current.path.length - 1} moves!  Here's your path:`
   );
@@ -47,4 +50,4 @@ function knightMoves(start, end) {
   });
 }
 
-knightMoves([0, 0], [2, 4]);
+knightMoves([0, 0], [7, 7]);
